@@ -20,6 +20,7 @@ const Theme = {
 refs.checkbox.addEventListener('change', onCheckboxChange);
 
 function onCheckboxChange(e) {
+  e.preventDefault();
   if (e.target.checked) {
     refs.body.classList.add(Theme.DARK);
     refs.body.classList.remove(Theme.LIGHT);
